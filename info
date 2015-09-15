@@ -10,3 +10,6 @@ Set Git version control
 	git init
 	git status
 	git add .
+	git push
+
+connect to heroku

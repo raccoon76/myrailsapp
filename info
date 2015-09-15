@@ -1,0 +1,12 @@
+Setting up new application on Rails
+
+Install Ruby
+Install Rails
+Rails new appname
+Rails server
+Set Git version control	
+	git config --global user.name myusername
+	git config --global user.email myemail
+	git init
+	git status
+	git add .

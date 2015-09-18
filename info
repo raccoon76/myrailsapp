@@ -13,3 +13,10 @@ Set Git version control
 	git push
 
 connect to heroku
+deploy to heroku
+
+create controllers
+	para crear paginas automaticamente
+	rails generate controller Pages home (controlador de paginas incluyendo home)
+
+	

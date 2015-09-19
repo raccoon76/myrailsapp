@@ -1,26 +1,12 @@
-<h2>Log in</h2>
+<h2>Entrar</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'input-group' }) do |f| %>
+<%= f.error_notification %>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end -%>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
+    <%= f.input :email, label: 'E-Mail' %>
+    <%= f.input :password, label: 'Clave'  %>
+    <%= f.input :remember_me, inline_label: 'Recordarme', as: :boolean  %>
+    <%= f.submit "Entrar", class: "btn btn-primary" %>
 <% end %>
 
 <%= render "devise/shared/links" %>

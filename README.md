@@ -1,5 +1,10 @@
-# My first Rails App
+# My App - Codename: Perejil
 
-This is my first Rails app.  Just a trial and error app to learn Ruby on Rails
+ This app is intended to offer users the ability to find products and services
 
-[Axel]
+Pending:
+1.  Add current_user validation to EDIT and DESTROY in ApplicationController.
+2. Remove Edit, Destroy options for non-current_user
+  2.1 From Show and from Index
+
+Axel

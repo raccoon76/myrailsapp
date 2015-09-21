@@ -4,8 +4,12 @@
       <p>
         <%= @reiteo.description %>
       </p>
-      <%= link_to 'Edit', edit_reiteo_path(@reiteo) %> |
-      <%= link_to 'Back', reiteos_path %>
-    </div>
+      <p>
+        <%= @reiteo.user.name %>
+      </p>
+              <%= link_to 'Edit', edit_reiteo_path(@reiteo) %> |
+
+        <%= link_to 'Back', reiteos_path %>
+          </div>
   </div>
 </div>

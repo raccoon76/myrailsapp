@@ -11,7 +11,16 @@
   </thead>
 
   <tbody>
-    <%= @reiteo %>
+    <% @reiteos.each do |reiteo| %>
+    <tr>
+      <td><%= reiteo.description %></td>
+      <td><%= link_to 'Show', reiteo %></td>
+        <% if current_user ==  reiteo.user %>
+          <td><%= link_to 'Edit', edit_reiteo_path(reiteo) %></td>
+          <td><%= link_to 'Destroy', reiteo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <%end%>
+    </tr>
+    <%end%>
   </tbody>
 </table>
 

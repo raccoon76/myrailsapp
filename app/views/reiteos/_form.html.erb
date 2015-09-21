@@ -1,11 +1,9 @@
-<%= simple_form_for(@reiteo) do |f| %>
+<%= simple_form_for(@reiteo, html: { class: "input-group"}) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :description %>
-  </div>
+    <%= f.input :description, as: :text, input_html: { rows: "3"} %>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, class: "btn btn-primary" %>
   </div>
 <% end %>

@@ -1,9 +1,11 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @reiteo.description %>
-</p>
-
-<%= link_to 'Edit', edit_reiteo_path(@reiteo) %> |
-<%= link_to 'Back', reiteos_path %>
+<div class= "row">
+  <div class="col-md-6 col-md-offset-2">
+    <div class ="well">
+      <p>
+        <%= @reiteo.description %>
+      </p>
+      <%= link_to 'Edit', edit_reiteo_path(@reiteo) %> |
+      <%= link_to 'Back', reiteos_path %>
+    </div>
+  </div>
+</div>
